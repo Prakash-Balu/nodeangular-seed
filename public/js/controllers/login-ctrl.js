@@ -17,33 +17,43 @@ function LoginCtrl($scope, $location, AuthServices, $http, toaster) {
     };
 
     $scope.loginUser = function(userData) {
-		angular.forEach($scope.users, function(value, key) {
+		/*angular.forEach($scope.users, function(value, key) {
 			if(userData.name == value.name && userData.password==value.password){
 				$scope.noError = true;
 				$location.path('/home/dashboard');
 			}
-		});
+		});*/
 		
-		if(!$scope.noError) {
-			toaster.pop({
-                type: 'error',
-                body: 'Enter Valid credentials',
-                timeout: 1000
-            });
-		}
-    };
-	
-	$scope.getUsers = function() {
-		AuthServices.getUsers()
+		$scope.getUsers(userData);
+		AuthServices.getUsers(userData)
 		.success(function(data){
 			$scope.users = data;
+			
+			
+			if(data.code == 200) {
+				$scope.noError = true;
+				$location.path('/home/dashboard');
+			} else {
+				toaster.pop({
+					type: 'error',
+					body: data.message,
+					timeout: 1000
+				});
+			}
 		}).error(function(error){
-			alert(error);
+			console.log(error);
+			
 		});
+		
+		
+    };
+	
+	$scope.getUsers = function(userData) {
+		
 	};
 	
     //Call function initialization
 	$scope.init();
-	$scope.getUsers();
+	//$scope.getUsers();
 	
 }
