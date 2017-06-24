@@ -1,0 +1,84 @@
+.login-body-bg {
+  padding-top: 662px;
+  background-color: #30426a;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+  font-weight: normal;
+}
+
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin-heading {
+	color:white;
+	text-align:center;
+}
+
+.login-container {
+	position: fixed;
+    z-index: 1;
+    left: 350px;
+    top: 180px;
+    width: 350px;
+    height: 300px;
+    background-color: rgba(0,0,0,0.35);
+}
+
+.form-btn-grp {
+	margin-left: 40px;
+	padding-top: 12px;
+}
+
+.register-body-bg {
+  padding-top: 662px;
+  background-color: #30426a;
+}
+
+.form-register {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.form-register-heading {
+	color:white;
+	text-align:center;
+}
+
+.register-container {
+		position: fixed;
+    z-index: 1;
+    left: 350px;
+    top: 180px;
+    width: 350px;
+    height: 330px;
+    background-color: rgba(0,0,0,0.35);
+}
+
+.reg-form-btn-grp {
+	margin-left: 95px;
+	padding-top: 12px;
+}
