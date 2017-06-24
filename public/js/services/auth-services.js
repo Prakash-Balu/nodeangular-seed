@@ -6,8 +6,15 @@ angular.module('RDash')
     .service('AuthServices', ['$http', AuthServices]);
 
 function AuthServices($http) {   
-	this.getUsers = function() {
-		return $http.get('http://localhost:8080/login.json')
+	this.getUsers = function(userData) {
+		/*return $http.get('data/login.json')
+		.success(function(data){
+			 return data;
+		}).error(function(error){
+			alert(error);
+		});*/
+		
+		return $http.post('http://localhost:3000/users',  {username: userData.name, password: userData.password })
 		.success(function(data){
 			 return data;
 		}).error(function(error){
