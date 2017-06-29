@@ -6,3 +6,4 @@ Step3: npm config set proxy http://username:password@proxy_ip:80
 Step4: npm config set https-proxy http://username:password@proxy_ip:80
 Step5: npm install
 Step6: npm start
+Step7: Hit the url http://localhost:3000 into browser
