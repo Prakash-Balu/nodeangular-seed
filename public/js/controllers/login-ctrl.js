@@ -19,7 +19,7 @@ function LoginCtrl($scope, $location, AuthServices, $http, toaster) {
         AuthServices.getUsers(userData)
             .success(function(data) {
                 if (data.code == 200) {
-                    $location.path('/home/dashboard');
+                    $location.path('/admin/dashboard');
                 } else {
                     toaster.pop({
                         type: 'error',
