@@ -23,21 +23,39 @@ angular.module('RDash').config(['$stateProvider', '$urlRouterProvider',
                 templateUrl: 'templates/register.html',
 				controller: 'RegisterCtrl'
             })
-			.state('home', {
+			.state('admin', {
 				cache: false,
-                url: '/home',
-                templateUrl: 'templates/home.html',
+                url: '/admin',
+                templateUrl: 'templates/admin/admin.html',
 				controller: 'MasterCtrl'
             })
-			.state('home.dashboard', {
+			.state('admin.dashboard', {
 				cache: false,
                 url: '/dashboard',
-                templateUrl: 'templates/dashboard.html'
+                templateUrl: 'templates/admin/dashboard.html'
             })
-            .state('home.tables', {
+            .state('admin.tables', {
 				cache: false,
                 url: '/tables',
-                templateUrl: 'templates/tables.html'
+                templateUrl: 'templates/admin/tables.html'
+            })
+			.state('users', {
+				cache: false,
+                url: '/users',
+                templateUrl: 'templates/users/users.html',
+				controller: 'MasterCtrl'
+            })
+			.state('users.dashboard', {
+				cache: false,
+                url: '/dashboard',
+                templateUrl: 'templates/users/dashboard.html',
+				controller: 'MasterCtrl'
+            })
+			.state('users.tables', {
+				cache: false,
+                url: '/tables',
+                templateUrl: 'templates/users/tables.html',
+				controller: 'MasterCtrl'
             });
     }
 ]);
