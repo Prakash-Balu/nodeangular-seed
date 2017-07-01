@@ -26,7 +26,7 @@ angular.module('RDash').config(['$stateProvider', '$urlRouterProvider',
 			.state('admin', {
 				cache: false,
                 url: '/admin',
-                templateUrl: 'templates/admin/admin.html',
+                templateUrl: 'templates/admin/home.html',
 				controller: 'MasterCtrl'
             })
 			.state('admin.dashboard', {
@@ -42,7 +42,7 @@ angular.module('RDash').config(['$stateProvider', '$urlRouterProvider',
 			.state('users', {
 				cache: false,
                 url: '/users',
-                templateUrl: 'templates/users/users.html',
+                templateUrl: 'templates/users/home.html',
 				controller: 'MasterCtrl'
             })
 			.state('users.dashboard', {
