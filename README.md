@@ -1,9 +1,6 @@
 # nodeangular-seed
 node mysql angular seed project
-Step1: First install nodejs package from Software House
-Step2: http://infypacsrv/mct.pac
-Step3: npm config set proxy http://username:password@proxy_ip:80
-Step4: npm config set https-proxy http://username:password@proxy_ip:80
-Step5: npm install
-Step6: npm start
-Step7: Hit the url http://localhost:3000 into browser
+Step1: First install nodejs package
+Step2: npm install
+Step3: npm start
+Step4: Hit the url http://localhost:3000 into browser
